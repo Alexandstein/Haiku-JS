@@ -1,0 +1,74 @@
+@appBack: black;
+@appBorder: #A00000;
+
+@textBack: white;
+@textColor: #555;
+@textBorder: white;
+
+@buttonBack: white;
+@buttonText: #999;
+@buttonBorder: #aaa;
+
+@buttonHover: white;
+@buttonHoverText: #444;
+@buttonHoverBorder: #777;
+
+#haiku_AppContainer{
+/*	margin: 100px; */
+	margin-left: auto;
+	margin-right: auto;
+	
+	width: 640px;
+	min-height: 400px;
+	font-family: helvetica;
+	border: solid 10px;
+	border-color: @appBorder;
+	padding: 10px;
+	
+	background-color: @appBack;
+}
+
+#haiku_App{
+
+}
+
+#haiku_Display{
+	border-left: solid black 5px;
+	width: 585px;
+	height: 250px;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	line-height: 2.5em;
+	padding: 5px;
+	font-size: 32px;
+	font-weight: 100;
+	
+	background-color: @textBack;
+	border-color: @textBorder;
+	color: @textColor;
+}
+
+#haiku_Button{
+	border: solid 5px;
+	width: 210px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	padding-top: 25px;
+	text-align: center;
+	font-size: 22px;
+	
+	cursor: pointer;
+	
+	background-color: @buttonBack;
+	color: @buttonText;
+	border-color: @buttonBorder;
+}
+#haiku_Button:hover{
+	color: @buttonHoverText;
+	background-color: @buttonHover;
+	border-color: @buttonHoverBorder;
+}
